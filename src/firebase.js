@@ -10,13 +10,7 @@ import {getStorage} from "firebase/storage"
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCHNFasty-nGSt75BfuH7n_qe12GdHHIdI",
-  authDomain: "ecommercesite-ed07a.firebaseapp.com",
-  projectId: "ecommercesite-ed07a",
-  storageBucket: "ecommercesite-ed07a.appspot.com",
-  messagingSenderId: "902638209144",
-  appId: "1:902638209144:web:4f9b22494478d3abe4858d",
-  measurementId: "G-FEDPHL3DH2"
+
 };
 
 // Initialize Firebase
