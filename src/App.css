@@ -1,0 +1,157 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Inter:500,800|Acme:400|Actor:400");
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+scroll-behavior: auto;
+  
+}
+body{
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+
+}
+.background {
+  background-color: #f6f9fc;
+  padding: 50px 0;
+}
+.container{
+  max-width: 90%;
+  margin: auto;
+}
+.d_flex{
+  display: flex;
+  justify-content: space-between;
+}
+.c_flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.f_flex{
+  display: flex;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+li{
+  list-style: none;
+}
+.uppercase{
+  text-transform: uppercase;
+ 
+}
+.capitalize{
+  text-transform: capitalize;
+}
+.RText{
+  text-align: right;
+}
+input, button{
+  border: none;
+  outline: none;
+  background-color: none;
+}
+.row{
+  width: 50%;
+}
+.icon-circle{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #f3f5f9;
+  margin-left: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+.boxShadow{
+  box-shadow: rgb(43 52 69 / 10%) 0 4px 16px;
+}
+/*
+Category
+*/
+.contentWidth{
+  width: 100%;
+}
+.category{
+  width:100%;
+  box-shadow: rgb(43 52 69 / 10%) 0 40px 16px;
+  height:fit-content;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+
+}
+.category img{
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  object-fit: contain;
+ 
+
+
+
+}
+.slick-dots li button:before {
+  /* This will change the color of the dots */
+  color: red !important;  
+  background-color: #000;
+}
+.slick-dots{
+  background-color: black;
+
+}
+.category span{
+  margin: 20px 20px;
+  text-transform: capitalize;
+}
+.category .box{
+  transition: .5s;
+  padding: 0 20px;
+
+}
+.category .box:hover{
+  background-color: #ffe1ef;
+  cursor: pointer;
+}
+
+/*
+Category
+*/
+.btn-primary{
+  background-color: #e94560;
+  padding: 13px 40px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+}
+.top{
+  margin-top: 80px;
+
+}
+.mtop{
+  margin-top:40px ;
+}
+.heading i{
+color: #e94560;
+margin: 10px;
+}
+/** Flash Card */
+
+
+
+
+/*----- control btn -------*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 30px;
+}
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
