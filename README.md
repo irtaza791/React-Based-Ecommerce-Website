@@ -115,14 +115,20 @@ Chapter 4. Methodology
 The Elite Equine Solution project's development unfolded in a series of stages, each progressively building on the foundation laid by the previous one. The process started with creating a basic layout, which was then followed by developing individual sections of the website.
 Stage 1 (Wireframe )
 The first stage involved creating a wireframe for the home page, a rudimentary blueprint that represented the skeletal framework of the website. The purpose of this stage was to lay out the structure, functionality, and content of the website without any design details, such as colour, typography, or images. The initial wireframe was quite basic, featuring a hero section and product bars as shown in Figure 1. It adopted a minimalistic approach, focusing on simplicity and functionality.
- 
+
+![image](https://github.com/user-attachments/assets/e7ecc824-8a70-4be3-a5ff-26442d93fed6)
+
 Figure 1
 
 Stage 2 (Initial design implementation)
 The wireframe served as a roadmap for the initial design implementation. The hero section was developed first, using vanilla CSS and React components. This section, as shown in Figure 2, conformed to a design common to most eCommerce sites - a hero section centrally aligned text and a call-to-action button redirecting to the products page.
 The next step was developing the 'Flash Deals' section. This section, as displayed in Figure 3, showcased around 10-15 specially priced products in a scrollable slider. The slider could be navigated using scroll or the left and right buttons, allowing users to browse through the featured deals.
+
+![image](https://github.com/user-attachments/assets/91f6c0ba-f1f3-4660-9aa5-6c51b6a735cd)
  
 Figure 2
+
+![image](https://github.com/user-attachments/assets/21c1db65-663c-4dee-84a8-d60071c7ec9d)
  
 Figure 3
 
@@ -130,6 +136,7 @@ Figure 3
 Stage 3 (More Sections)
 With the hero and flash deals sections in place, the next stage was developing the 'Featured Collection' section. This section was designed to present products to users in a visually appealing manner. As shown in Figure 4, this design incorporated a fading animation triggered by scrolling. When users scrolled to this section, the animation was activated, gradually revealing the section for an added element of surprise and engagement.
  
+![image](https://github.com/user-attachments/assets/b3db0cda-6955-497e-9c36-b44f62d54662)
 Figure 4
 This progressive development approach allowed for iterative refinement, with each stage being built and evaluated before moving on to the next. The result was a meticulously designed and user-friendly eCommerce platform that offers a great user experience.
 
@@ -143,6 +150,8 @@ The subsequent stage in the project was the integration of products into the eCo
 Initially, the products were stored locally in the project structure. JavaScript was employed to create objects for each product, rendering them on the 'All Products' page. This preliminary product page design, as seen in Figure 5, was relatively basic, with the primary focus being on functionality rather than aesthetics.
 The 'All Products' page was designed to serve as a comprehensive display of the entire range of products offered by the store. It included a search bar and filter bar, providing users the ability to sort and filter products according to their needs and preferences.
 This stage was a significant one as it marked the transition from a skeleton structure of the website to a more fleshed-out version. It paved the way for more intricate designs and functionality improvements in subsequent stages.
+
+![image](https://github.com/user-attachments/assets/7b9556a3-f542-445c-a36a-e48daa30e895)
  
 Figure 5
 As the project advanced, the inclusion of products transitioned from local storage to Firebase Firestore. Firestore provided a more scalable and efficient solution for storing and retrieving product data, which became more apparent as the number of products and user interactions increased. The decision to switch to Firestore was part of the iterative development process, a hallmark of the Software Development Life Cycle (SDLC) approach adopted for this project.
@@ -151,6 +160,8 @@ Effective project management is an integral part of the development process, esp
 In this stage, I turned to monday.com, an online task management tool widely recognised for its intuitive interface and robust features. As depicted in Figure 6, I created a task list outlining all the necessary steps and sub-tasks needed to bring the project to fruition.
 These tasks ranged from primary development tasks, such as front-end design and back-end integration, to more specific ones, like 3D product rendering and Firebase Fire store implementation. Each task was documented with a set status, and the platform allowed me to monitor their progress effectively.
 The use of monday.com proved to be invaluable in keeping me organised and on track with my project goals. It provided a visual representation of the project timeline, making it easier to identify bottlenecks or delays and adjust the plan accordingly.
+
+![image](https://github.com/user-attachments/assets/b1195723-c7c0-4252-af31-1bc73149966f)
  
 Figure 6
 Stage 6 (Firestore Datastore Integration and Bulk Upload)
@@ -158,6 +169,8 @@ The sixth stage involved migrating product information from local storage to an 
 Firstly, I had to create an Admin section where the store owner can upload the products to the online database. In conventional eCommerce platforms, administrators typically must upload products individually, manually entering product details. This process can be laborious and time-consuming, particularly when dealing with many products.
 To alleviate this issue and streamline the uploading process, I implemented a method that allowed bulk product uploads. With this new feature, an administrator can add hundreds of products simultaneously by filling out a CSV file and uploading it to the website. The structure of this CSV file, as shown in Figure 7, is designed to include essential product details such as product name, description, price, and image URL.
 Upon uploading the CSV file, the website automatically parses the file, validates the data, and adds the products to the Firestore Datastore. This feature drastically reduces the time and effort needed to update the product inventory and ensures the process is efficient and error-free.
+
+![image](https://github.com/user-attachments/assets/c0c5f8f9-860c-4601-97b1-59e7cf4f229d)
  
 Figure 7
 This stage of the project was significant as it introduced a more robust and flexible solution for data storage and manipulation. Moreover, the bulk upload feature added a layer of convenience and efficiency for the store admin, redefining how product information is managed in the system.
@@ -169,6 +182,7 @@ One key feature I implemented was unique user identification (UID). When a user 
 Moreover, I implemented an admin identification feature using the UID. To test this, I registered a user, obtained its UID, and designated this UID as an admin UID. The admin UID was utilized to distinguish an admin from regular users, offering different access levels and functionalities. A user with an admin UID has access to administrative functionalities, such as adding, editing, and removing products, while regular users do not have these permissions.
 Figure 7 shows the user registration interface, and Figure 9 shows the admin dashboard, which is only accessible by users with admin UID.
 
+![image](https://github.com/user-attachments/assets/0fb625f9-d6d8-44e5-83e0-0aaeff5d8022)
  
 Figure 8
 Stage 8 (User Functionalities - Cart System)
@@ -176,7 +190,9 @@ The eighth stage was focused on creating user functionalities. With registered u
 The user dashboard was developed to be the hub of these interactions. The dashboard comprised several menus, such as user orders, cart items, favourite items, profile page, and price targets. At this point, while the menus were displayed on the dashboard, not all were functional. The first one I brought to life was the cart system, a crucial component of any eCommerce site. The cart system allowed users to add products to their cart, providing a centralized place to review selected items before proceeding to checkout. Each product card on the website was equipped with an 'Add to Cart' button, which, when clicked, would add the product to the user's cart.
 From a technical standpoint, the cart system was created using Firebase's Firestore Datastore. When a user registers on the site, a new collection is created in Firestore, representing the user. This collection contains several subcollections: orders, cart, favourite items, and price targets. Each user, identified by their unique UID, has these collections. This design allows each user to have a personalized experience on the platform, with their own cart, favourite items, and more.
 Figure 8 illustrates the process of adding a product to the cart, and Figure 11 shows a user's cart with several items.
- 
+
+![image](https://github.com/user-attachments/assets/8e715caf-e776-406d-898e-fd819c53d7c2)
+
 Figure 9
 While the cart system catered to registered users of the platform, it was also essential to accommodate guests or users who did not wish to create an account. I had to ensure that their shopping experience was smooth and intuitive.
 For this purpose, a guest user cart system was developed. This system leveraged the power of local storage in a user's web browser to store the products they added to their cart. If a guest user decided to check out, they would be prompted to create an account. Upon successful account creation, the items previously stored in the local storage would automatically transfer to the user's cart collection in the database.
@@ -184,6 +200,8 @@ For this purpose, a guest user cart system was developed. This system leveraged 
 Stage 9 (User Functionalities – Order and Checkout System)
 The next step was to create an order placement and checkout system. This was exclusively for authenticated users who had created an account with the platform. As the focus of this project was not to create a full-fledged ecommerce platform with real-time payment processing, a simplified checkout system was implemented.
 The checkout system captured user details and fetched the products from the user's cart, enabling them to place an order. It was designed to be intuitive, user-friendly, and straightforward, providing an efficient and seamless checkout experience for our users. As depicted in Figure 10, the checkout interface was created keeping in mind simplicity and ease-of-use.
+
+![image](https://github.com/user-attachments/assets/6cd23c90-d82b-4eef-acc7-858028c42a22)
  
 Figure 10
 Once an order was placed, users could view their order history in the "Orders" section of their user dashboard or on their profile page. The reason behind this is the system's design - the user's order history is stored in their personal database. It retains all the orders they have placed with us, providing a transparent and easy-to-follow history of their transactions. This step in the development process played a pivotal role in shaping the user experience on the platform. Not only did it provide users with the ability to make purchases, but it also allowed them to keep track of their orders, enhancing transparency and trust between the platform and its users. This, in turn, would encourage continued engagement with the platform, bolstering its potential for success.
@@ -192,7 +210,9 @@ Stage 10 (Adding Favourites)
 The subsequent stage was to improve the user experience by adding functionality that allowed users to mark their favourite items. Often, customers browse through multiple products and identify certain items that they might want to purchase at a later time. The 'favourites' feature was implemented to cater to this need. It provided a straightforward and convenient way for users to save and easily access the items they were most interested in.
 
 This feature was enabled through a simple heart icon located on each product. Users could click on this icon, marking the item as a 'favourite.' The selected item would then be added to the 'favourites' collection in the user's personal database. Figure 11 illustrates the heart icon used to add items to favourites.
- 
+
+![image](https://github.com/user-attachments/assets/5642e1fd-579d-4510-991d-64615e9dd2bc)
+
 Figure 11
 This feature, while seemingly simple, significantly improved the user experience. It provided users with a level of personalization and engagement, reinforcing their connection with the platform. It also served as a tool to encourage return visits, as users would have a ready list of items they were interested in and might want to revisit.
 In conclusion, the 'favourites' feature was an important addition to the platform. It not only enhanced user experience but also helped promote user engagement and retention, contributing to the platform's overall success. This marked another critical milestone in the development process, demonstrating the importance of personalization in ecommerce platforms.
@@ -207,12 +227,15 @@ In conclusion, the 'favourites' feature was an important addition to the platfor
 Stage 11 (Price Target Feature)
 
 The following phase of development focused on a more advanced feature aimed at providing a value-added service for the users - the price target feature. This feature was born out of an understanding of how customers interact with ecommerce platforms, particularly when it comes to pricing. Often, users come across items they desire, but the current price might be beyond their budget. The price target feature was developed to address this scenario. The implementation was straightforward. Each product page was equipped with a 'Set Price Target' button, which, when clicked, allowed users to set their desired price for the item. This information, along with the product details, was stored in a dedicated collection in the user's personal database. This process can be visualized in Figure 12.
- 
+
+![image](https://github.com/user-attachments/assets/3631e859-921b-4d01-8ca1-2e234d537701)
+
 Figure 12
  
 Within the user's dashboard, there was a specific menu for 'Price Targets.' This menu displayed all the items for which the user had set a price target. More importantly, if the actual price of a product matched the target price set by the user, that product was highlighted. This dynamic functionality can be observed in Figure 13.
 
- 
+ ![image](https://github.com/user-attachments/assets/b6ea1b35-81cb-4020-884c-0fca7b8a3df8)
+
 Figure 13
 This feature provided users with a level of engagement and personalization that went beyond the typical ecommerce experience. It allowed users to feel more in control of their shopping experience and helped them engage more deeply with the platform. It also incentivized users to return to the platform to monitor the prices of their desired items.
 The price target feature represented another significant step in the development process. It demonstrated how customer-centric features could enhance user engagement and satisfaction, contributing to the success of the platform. This stage once again underscored the importance of understanding user behaviour and needs in the development of a successful ecommerce platform.
@@ -230,7 +253,8 @@ The price target feature represented another significant step in the development
 Stage 12 (Profile and Personalization)
 Another aspect of an eCommerce platform that contributes to its user-friendliness and user engagement is personalization. Understanding the need for this, the next stage of the development process focused on creating a personal profile page for each user. This profile page, accessible from the user's dashboard, serves as a personal space for the user on the platform. The interface of the profile page is illustrated in Figure 14.
 
- 
+ ![image](https://github.com/user-attachments/assets/3908aeb6-5747-440b-83fa-cf1e34974add)
+
 Figure 14
 The profile page allows users to store and edit personal details such as their name, email, gender, and address. This information helps in tailoring a personalized shopping experience for the user, enhancing their engagement with the platform. Moreover, having the user's address stored eliminates the need for inputting this information at every checkout, making the process more efficient and less time-consuming.
 In addition to the personal detail editing feature, the profile page also provides a summary view of the user's history. The user's past interactions with the platform, such as order history and price targets, are displayed here, providing the user with a quick and easy access point to review their activities on the platform.
@@ -238,6 +262,8 @@ This stage of development emphasized the importance of personalization in an eCo
 Stage 13 (Community Feedback and Rating)
 In the pursuit of continuously improving the platform and catering to the needs of the users more effectively, the next stage of development was dedicated to establishing a community feedback forum. This forum serves as a platform for registered users to express their opinions, provide feedback, and rate the shop based on their experiences. This feedback mechanism is illustrated in Figure 15.
  
+ ![image](https://github.com/user-attachments/assets/c0fe0a6e-2031-4f34-8a9f-090ed8aba2e6)
+
 Figure 15
 The community feedback forum encourages user participation and promotes a sense of community among the users. It offers a channel for users to express their thoughts and voice any concerns, while the star rating system provides a quantifiable measure of user satisfaction. By taking the time to review and rate the platform, users indirectly contribute to its development and improvement.
 Notably, this feature is exclusive to registered users. While guest users have the liberty to read through the feedback and ratings, they are not allowed to provide feedback or rate the platform. This exclusivity has a twofold purpose - it encourages guest users to register and become a part of the community, and it ensures the integrity and authenticity of the feedback and ratings, as they come from verified users.
@@ -249,7 +275,9 @@ In essence, the community feedback forum is a valuable tool for understanding us
 Stage 14 (Admin Dashboard and Functionalities)
 The next step in the project was to cater to the administrative side of the platform. The Admin Dashboard was constructed to provide the administrators with comprehensive tools to manage the website efficiently. This phase of the project development focused on building administrative functionalities and features, including an extensive Admin Dashboard, Analytics, Add Products, Edit Store, and Edit Products features, as explained below:
 Admin Dashboard: This is the primary interface that an admin sees upon logging in. It provides a snapshot of the ecommerce platform's performance. The dashboard displays crucial data such as total revenue generated, total orders placed, average order value, the sales trend for the whole year, and all pending orders that need fulfilment. This central control panel is designed to aid admins in their decision-making process and offer a quick overview of the platform's status, as shown in Figure 16.
- 
+
+ ![image](https://github.com/user-attachments/assets/ee9013cc-4469-4eec-96de-b662e400ada3)
+
 Figure 16
 Analytics: This section provides the admin with detailed insights into the platform's performance. It includes metrics such as daily sales, daily orders, and data about the most and least ordered products. These analytics offer a deeper understanding of the platform's operation, helping the admin identify trends, make informed decisions, and implement effective strategies for improvement.
 Add Products: This feature empowers the admin to add new products to the shop in bulk. This is accomplished through a CSV file upload, allowing the admin to add multiple products at once, significantly reducing the time and effort required for product uploads.
@@ -257,7 +285,9 @@ Edit Products: This functionality gives the admin the ability to modify the deta
 Edit Store: Although it has not been fully implemented at this stage, the Edit Store feature is planned to offer admins the ability to adjust the store's look and feel, tweak settings, and manage various store-related aspects.
 These advanced admin features are designed to offer a high level of control over the platform's operation. They equip admins with the tools they need to manage the ecommerce platform effectively, ultimately ensuring an excellent shopping experience for the users. The development of these features marks a significant milestone in the project, enabling a robust and efficient platform management mechanism.
 
- 
+
+ ![image](https://github.com/user-attachments/assets/667d60c7-991f-452b-8505-c3f22411f34f)
+
 Figure 17
 
 
@@ -276,7 +306,9 @@ Stage 15 (Frontend Development and Redesign)
 The project then transitioned to a vital phase focused on revamping the frontend, enhancing the visual appeal, and optimizing the user interface. The original CSS was entirely replaced with Material UI, a popular React UI framework, to provide a more modern, consistent, and responsive interface. In addition, React Reveal was incorporated to introduce smooth and attractive animations, adding a layer of dynamism to the platform's presentation. One of the significant changes in this stage was the complete transformation of the hero section. Originally, it featured a simple design with a static image and text. Recognizing the need to make the website more engaging and align better with the brand's identity, a decision was made to implement a 3D rendering solution using Three.js. This JavaScript library allowed for the creation and display of 3D graphics in a web browser.
 In line with the brand's identity as a provider of horse-riding equipment, a 3D model of a horse was incorporated into the hero section. The horse model, echoing the brand's logo, was set to rotate on a canvas, thereby creating an immersive and interactive visual experience for the users right from the homepage. The addition of the 3D model not only enhances the aesthetic appeal but also adds a unique and engaging element to the website, setting it apart from standard e-commerce sites. In the future, there is potential for incorporating more sophisticated 3D models, further elevating the website's appeal and immersive experience. It's essential to mention that while the integration of Material UI, React Reveal, and Three.js demanded additional effort, the payoff in terms of the site's responsiveness, speed, and overall visual appeal was tremendous. The redesigned website now boasts a visually stunning interface that is intuitive, engaging, and fast-paced, ensuring a seamless and enjoyable shopping experience for users.
 This phase of the project underlines the importance of striking a balance between functional efficiency and aesthetic appeal in creating an e-commerce platform. An engaging and user-friendly interface significantly contributes to the platform's success by fostering user satisfaction and driving user engagement. Figure 18 illustrates the new hero section with the 3D model of a horse.
- 
+
+ ![image](https://github.com/user-attachments/assets/f7c51bd4-bf13-41ba-a463-9466b5df6dd4)
+
 Figure 18
 Overall, the project's redesign stage embodied a significant transformation, enhancing the platform's frontend, refining the user experience, and aligning the visual presentation more closely with the brand's identity. This phase marked a crucial point in the development process, setting the stage for subsequent steps and laying a strong foundation for the platform's success.
 
@@ -378,7 +410,9 @@ User Testing: A variety of users were invited to interact with the platform, pro
 
 Performance Testing: To ensure that the website could handle multiple concurrent users and large data loads, performance testing was conducted. Also the website was able to run smoothly in different devices with low power and high power. And also the website is responsive for different screen sizes.
 As we can see in the figure 19 below a mobile version of the website is visible.
- 
+
+![image](https://github.com/user-attachments/assets/2ad57094-130a-4307-b888-60ec140debd2)
+
 Figure 19
 
 
