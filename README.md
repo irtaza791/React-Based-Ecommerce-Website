@@ -1,70 +1,7 @@
-# Getting Started with Create React App
+Abstract
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+In today’s rapidly evolving digital world, the ecommerce industry has experienced a significant growth. People prefer the convenience and ease of online shopping. However, they must face many challenges such as slow navigation, hard-to-understand interfaces, and a lack of advance features that can enhance the overall shopping experience. This project aims. is to develop an ecommerce website that addresses these challenges. 
+The motivation behind creating Elite Equine Solution website his project was to create a user friendly, feature-rich ecommerce. platform that provides an easy shopping experience for customers and management for the administrators. Our primary goals were to improve navigation speed, implement advanced. features such as price tracking and order tracking, and to create an aesthetically pleasing user interface.
+Elite Equine Solution offers a range of innovative features including price tracking system, fast and secure order placement and payment, order tracking and many more features. Price tracking allows users to set a target price for products they like but may be out of their price range. When the target price is reached the user receives a notification by email. This can help increase their purchase decisions. The website also offers a fast and secure order placement and payment, and order tracking. With this project we have successfully achieved our goals of creating an enjoyable shopping experience for users while simplifying administrative tasks for website managers
+To achieve the following features, we used React a popular JavaScript library known for its performance and flexibility. The website uses Firebase for the backend services which enables efficient data storage, real time updates and secure user authentication. The use of react and firebase allowed rapid development and integration of various components.
+In summary, our e-commerce platform highlights the potential of using the React framework and Firebase integration to develop feature-packed, high-performance websites that cater to the ever-changing needs of online shoppers. It offers a 
